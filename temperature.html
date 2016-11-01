@@ -1,0 +1,29 @@
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>攝氏溫度轉換器</title>
+
+    <script>
+    var whilecheck = "true";
+
+    function converter(x){
+      if(x >= -1000 && x <=1000){
+        x = 9 * x / 5 + 32
+        whilecheck = "false";
+        alert("華氏溫度為：" + x);
+      }
+
+      else{
+        alert("輸入錯誤！！！請輸入-1000~1000的數字！！！");
+      }
+    }
+
+    while (whilecheck == "true") {
+      var x = prompt("請輸入攝氏溫度（-1000~1000以內的數字）","");
+      converter(x)
+    }
+    </script>
+</head>
+<body>
+</body>
+</html>
